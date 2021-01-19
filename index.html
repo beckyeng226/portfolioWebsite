@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Portfolio Website Home page</title>
+ <!-- Describe this page for search engines -->
+ <meta name="description" content="Portfolio of the work of Rebecca Eng">
+ <!-- Character set for English and similar languages -->
+ <meta charset="utf-8">
+ <!-- Helps with rendering on mobile devices -->
+ <meta name="viewport" content="width=device-width">
+ <!-- Link to external style sheet -->
+ <link href="style.css" rel="stylesheet" type="text/css">
+ 
+</head>
+<body>
+ <script>
+ //Make older browsers aware of new HTML5 layout tags
+ 'header nav aside article footer section figure figcaption'.replace(/\w+/g, function (n) { document.createElement(n) })
+ </script>
+
+ <!-- Header is logo and nav bar -->
+ <header>
+   <h1>Rebecca Eng</h1>
+   <img src="images/tea-cozy-logo.webp">
+   
+ <!-- Lcoal links to sections of the page -->
+ <nav>
+     <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="contact.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+     </ul>
+   
+
+ </nav>
+</header>
+ 
+ <!-- Main content includes 3 sections -->
+ <main>
+   <section id="projects" class="flex-container">
+      <div class="content">
+       <h2>Projects</h2>
+       <h4></h4>
+    </div>
+    <figure>
+        <img src="images/berryblitz.webp" alt="">
+       
+        <figcaption>Fall Berry Blitz Tea</figcaption>
+    </figure>
+    <figure>
+        <img src="images/spiced-rum.webp" alt="">
+    
+        <figcaption>Spiced Rum Tea</figcaption>
+    </figure>
+    <figure>
+        <img src="images/donut.webp" alt="">
+    
+        <figcaption>Seasonal Donuts</figcaption>
+    </figure>
+    <figure>
+        <img src="images/myrtle-ave.webp" alt="">
+     
+        <figcaption>Myrtle Ave Tea</figcaption>
+    </figure>
+    <figure>
+        <img src="images/bedford-bizarre.webp" alt="">
+  
+        <figcaption>Bedford Bizarre Tea</figcaption>
+    </figure>
+   </section>
+
+   <section id="skills">
+        <h2>Skills</h2>
+        <h3>Tech Skills</h3>
+          <ul>
+            <li>HTML5 (expert)</li>
+            <li>CSS3 (expert)</li>
+            <li>JavaScript (fluent)</li>
+            <li>Python3 (proficient)</li>
+            <li>Git/GitHub</li>
+            <li>Canvas Learning Management System (LMS)</li>
+          </ul>
+        <h3></h3>
+
+        
+    </section>
+
+</main>
+ 
+ <!-- Footer at bottom of page contains copyright information -->
+ <footer>
+    <h5>&copy RVE 2021</h5>
+ </footer>
+ 
+</body>
+</html>
