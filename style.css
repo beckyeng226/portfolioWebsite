@@ -1,0 +1,64 @@
+html {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Montserrat";
+    margin: 0;
+}
+h1 {
+    font-size: 3.5rem;
+    font-family: "Nothing You Could Do";
+    padding-top: 30px;
+    
+}
+header {
+    height: 200px;
+    background-image: url("images/header3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    float: right;
+}
+
+nav ul li {
+    padding: 5px 10px;
+    font-size: 1.75rem;
+
+}
+figure {
+    display: inline-block;
+    
+}
+
+figure img {
+    width: 300px;
+}
+
+img {
+    width: 25%;
+    padding: 1%;
+}
+.gridcontainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+
+}
+.techSkills, .otherSkills {
+    width: 100%;
+    border: 1px solid black;
+}
+.techSkills {
+    grid-column: 1 / 2;
+}
+.otherSkills {
+    grid-column: 2 / 3;
+}
+.techSkills ul, .otherSkills ul {
+    
+    text-align: left;
+    
+}
