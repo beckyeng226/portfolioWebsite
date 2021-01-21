@@ -42,10 +42,10 @@
  <!-- Main content includes 2 sections and the contact form -->
  <main>
    <section id="aboutme">
+    <h2>About Me</h2>
       <div class="content">
-       <h2>About Me</h2>
        <img src="images/headshot_1_15_21.jpg" alt="Rebecca Eng">
-       <div>
+       <div class="biotext">
         <p>In the spring of 2019, I decided to change career directions and become a programmer.  
             I spent several months taking online courses trying to narrow down what I wanted to do.  
             After taking several HTML/CSS courses, I muddled through the design and development of my first 
@@ -60,20 +60,39 @@
             solve word and math puzzles/games, and read.  
             I also enjoy knitting and crocheting to relax.
         </p>
+        </div>
       </div>
     </div>
    </section>
 
    
-
+   <h2>What can I develop for you?</h2>
    <section id="contact">
-    <h2>I look forward to hearing from you</h2>
-    <h3>beckyeng226@gmail.com</h3>
-    <h3>443-285-1080</h3>
+    
+    <form class="form" action="mailto:beckyeng226@gmail.com" method="POST" name="emailForm" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+            <input id="name" type="text" name="name" required>
+            <br/>
+        <label for="email">Email Address:</label>
+            <input id="email" name="email" type="text" required>
+            <br/>
+        <label for="phone">Phone Number:</label>
+            <input id="phone" name="phone" type="text" required>
+            <br/>
+        <label for="comments">What is the best time and manner to contact you?  Any other comments/questions?</label>
+        <br/>
+            <textarea name="comments" cols="80" rows="5"></textarea>
+            <br/>
+        <input type="submit" id="submit">
+       </form>
+    <div class="contactinfo">
+      <h3>Email Me: <a href="mailto:beckyeng226@gmail.com" target="_blank">beckyeng226@gmail.com</a> </h3>
+      <h3>Call Me: <a href="tel:4432851080">443-285-1080</a></h3>
+      <h3>Check out more of my work on GitHub: <a href="https://github.com/beckyeng226" target="_blank">https://github.com/beckyeng226</a></h3>
+      <h3>Connect with Me on LinkedIn: <a href="https://www.linkedin.com/in/rebecca-vereb-eng/" target="_blank">https://www.linkedin.com/in/rebecca-vereb-eng/</a></h3>
+    </div>
    </section>
-   <form>
-
-   </form>
+   
 
 </main>
  

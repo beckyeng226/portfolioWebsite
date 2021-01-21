@@ -10,6 +10,23 @@ h1 {
     padding-top: 30px;
     
 }
+h2 {
+    font-size: 2.5rem;
+    color: #9c32db;
+}
+h3 {
+    font-size: 2.0rem;
+    color: #9c32db;
+}
+h4 {
+    font-size: 1.75rem;
+}
+h5 {
+    font-size: 1rem;
+}
+p {
+    font-size: 1.5rem;
+}
 header {
     height: 200px;
     background-image: url("images/header3.jpg");
@@ -27,6 +44,20 @@ nav ul li {
     font-size: 1.75rem;
 
 }
+a:link {
+    color: #9c32db;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #807BCD;
+}
+a:hover {
+    color: #5E5E91;
+}
+a:active {
+    color: #e187d8;
+}
 figure {
     display: inline-block;
     
@@ -40,16 +71,16 @@ img {
     width: 25%;
     padding: 1%;
 }
-.gridcontainer {
+.skillsgrid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5px;
+    grid-column-gap: 25px;
 
 }
 .techSkills, .otherSkills {
     width: 100%;
-    border: 1px solid black;
+    
 }
 .techSkills {
     grid-column: 1 / 2;
@@ -57,8 +88,65 @@ img {
 .otherSkills {
     grid-column: 2 / 3;
 }
-.techSkills ul, .otherSkills ul {
-    
+.techSkills img {
+    width: 60%;
+} 
+.otherSkills ul {
+    font-size: 1.5rem;
     text-align: left;
     
+}
+.content {
+    display: grid;
+    width: 100%;
+    grid-template:repeat(2, 1fr) / 2fr 1fr;
+}
+.content img {
+    grid-area: 1 / 2 / 3 / 3;
+    width: 100%;
+    padding-top: 30px;
+   
+}
+.content .biotext {
+    grid-area: 1 / 1 / 3 / 2;
+    padding: 0 10px;
+    text-align: left;
+    
+}
+#contact {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 55% 43%;
+    grid-column-gap: 25px;
+}
+.form, .contactinfo {
+    width: 100%;
+    padding: 1%;
+}
+.form {
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #9c32db;
+}
+.contactinfo h3 {
+    font-size: 1.5rem;
+}
+footer {
+    text-align: left;
+    height: 50px;
+    background-color: #BDA1DB;
+    padding: 5px;
+    margin: 0;
+}
+@media only screen and (max-width: 1060px) {
+    .skillsgrid, .content, #contact {
+        display: inline-block;
+    }
+    .form {
+        text-align: left;
+    }
+    nav ul li {
+        font-size: 1.25rem;
+    }
 }
